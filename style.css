@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Black background */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  /* Beating Heart */
+  .heart {
+    width: 100px;
+    height: 90px;
+    position: relative;
+    animation: beat 1s infinite;
+    margin-bottom: 30px;
+    margin-left: 220px;
+  }
+  
+  .heart::before,
+  .heart::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 52px;
+    height: 80px;
+    background: #ff0066;
+    border-radius: 50px 50px 0 0;
+  }
+  
+  .heart::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  
+  .heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+  
+  @keyframes beat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px; /* Reduced padding for a smaller size */
+    font-size: 16px; /* Smaller text */
+    color: white;
+    background-color: #ff4081; /* Softer pink for a modern look */
+    border: none;
+    border-radius: 25px; /* Slightly smaller border-radius */
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 3px 3px 10px rgba(255, 64, 129, 0.3); /* Soft glow effect */
+    margin-left: -26px;
+    margin-top: 40px;
+}
+
+/* Hover effect */
+.button:hover {
+    background-color: #e60073; /* Darker pink on hover */
+    box-shadow: 3px 3px 15px rgba(230, 0, 115, 0.4);
+    transform: scale(1.05); /* Slight increase in size on hover */
+}
+
+/* Active (click) effect */
+.button:active {
+    transform: scale(0.95);
+}
+
+  
+  .button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ff0066;
+  }

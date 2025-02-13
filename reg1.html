@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💕 The Perfect Date & Valentine's Plans 💕</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #ffe6e6;
+        color: #4d4d4d;
+        padding: 20px;
+      }
+      .form-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      h1 {
+        color: #ff4d4d;
+      }
+      .question {
+        margin-bottom: 20px;
+      }
+      .options {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 20px;
+      }
+      .options label {
+        margin-bottom: 10px;
+      }
+      .submit-button {
+        background-color: #ff4d4d;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .submit-button:hover {
+        background-color: #e60000;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>💕 The Perfect Date & Valentine's Plans 💕</h1>
+
+      <form id="valentine-form">
+        <!-- Sender's Details -->
+        <div class="question">
+          <b><p>Your Name:</p></b>
+          <input
+            type="text"
+            name="sender_name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div class="question">
+          <b><p>Your Mobile Number:</p></b>
+          <input
+            type="tel"
+            name="sender_mobile"
+            placeholder="Enter your mobile number"
+            required
+          />
+        </div>
+
+        <div class="question">
+          <b><p>Your Email:</p></b>
+          <input
+            type="email"
+            name="sender_email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <!-- Valentine's Questions -->
+        <div class="question">
+          <b
+            ><p>
+              "If I planned a perfect date for us, would you prefer a
+              candlelight dinner or a cozy movie night?"
+            </p></b
+          >
+          <div class="options">
+            <label
+              ><input type="radio" name="date" value="dinner" /> Candlelight
+              Dinner 🍷</label
+            >
+            <label
+              ><input type="radio" name="date" value="movie" /> Cozy Movie Night
+              🎬</label
+            >
+          </div>
+        </div>
+
+        <div class="question">
+          <b><p>"What's your ideal Valentine's Day plan?"</p></b>
+          <div class="options">
+            <label
+              ><input type="radio" name="valentine" value="dinner" /> A romantic
+              dinner 🍷</label
+            >
+            <label
+              ><input type="radio" name="valentine" value="drive" /> A long
+              drive 🚗</label
+            >
+            <label
+              ><input type="radio" name="valentine" value="cozy" /> A cozy night
+              in 🏡</label
+            >
+            <label
+              ><input type="radio" name="valentine" value="surprise" /> Surprise
+              me! 🎁</label
+            >
+          </div>
+        </div>
+
+        <div class="question">
+          <b
+            ><p>
+              "Do you like receiving flowers, chocolates, or sweet handwritten
+              notes on a date?"
+            </p></b
+          >
+          <div class="options">
+            <label
+              ><input type="checkbox" name="gift" value="flowers" /> Flowers
+              💐</label
+            >
+            <label
+              ><input type="checkbox" name="gift" value="chocolates" />
+              Chocolates 🍫</label
+            >
+            <label
+              ><input type="checkbox" name="gift" value="notes" /> Sweet
+              handwritten notes 💌</label
+            >
+          </div>
+        </div>
+
+        <div class="question">
+          <b
+            ><p>
+              "If I surprised you with your favorite dessert on our date, what
+              would it be?"
+            </p></b
+          >
+          <input
+            type="text"
+            name="dessert"
+            placeholder="Your favorite dessert..."
+          />
+        </div>
+
+        <div class="question">
+          <b><p>"Can I be your Valentine? ❤️"</p></b>
+          <div class="options">
+            <label
+              ><input type="radio" name="valentine_choice" value="yes" /> Yes,
+              no questions asked! 😍</label
+            >
+            <label
+              ><input type="radio" name="valentine_choice" value="convince" />
+              Convince me with a cute text 😉</label
+            >
+            <label
+              ><input type="radio" name="valentine_choice" value="already" />
+              You already are! 🥰</label
+            >
+          </div>
+        </div>
+
+        <div class="question">
+          <b><p>"What’s your favorite thing about me? 😏"</p></b>
+          <div class="options">
+            <label
+              ><input type="radio" name="favorite" value="smile" /> Your smile
+              😊</label
+            >
+            <label
+              ><input type="radio" name="favorite" value="humor" /> Your humor
+              😂</label
+            >
+            <label
+              ><input type="radio" name="favorite" value="kindness" /> Your
+              kindness 💖</label
+            >
+            <label
+              ><input type="radio" name="favorite" value="everything" />
+              Everything! 🥰</label
+            >
+          </div>
+        </div>
+
+        <div class="question">
+          <b><p>"Can I kiss you? 😘"</p></b>
+          <div class="options">
+            <label><input type="radio" name="kiss" value="yes" /> Yes 💋</label>
+            <label
+              ><input type="radio" name="kiss" value="absolutely" /> Absolutely
+              😍</label
+            >
+            <label
+              ><input type="radio" name="kiss" value="waiting" /> I was waiting
+              for you to ask 😉</label
+            >
+          </div>
+        </div>
+
+        <div class="question">
+          <b
+            ><p>
+              "Will you give me the chance to show you what my love feels like?
+              Be my Valentine. ❤️"
+            </p></b
+          >
+          <button class="submit-button" type="submit">
+            Be My Valentine 💖
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- EmailJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("peRIViNUIkfkb6RlM"); // Replace with your EmailJS public key
+      })();
+
+      document
+        .getElementById("valentine-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent page reload
+
+          // Collect form data
+          const formData = new FormData(event.target);
+          const templateParams = {
+            to_name: "Your Name",
+            from_name: formData.get("sender_name"),
+            sender_mobile: formData.get("sender_mobile"),
+            sender_email: formData.get("sender_email"),
+            date: formData.get("date"),
+            valentine: formData.get("valentine"),
+            gift: formData.getAll("gift").join(", "),
+            dessert: formData.get("dessert"),
+            valentine_choice: formData.get("valentine_choice"),
+            favorite: formData.get("favorite"),
+            kiss: formData.get("kiss"),
+          };
+
+          // Send email via EmailJS
+          emailjs
+            .send("service_mjq6ewr", "template_p2ibzyv", templateParams)
+            .then(function (response) {
+              alert("💖 Your responses have been sent! Thank you!");
+              window.location.href = "thankyou.html"; // Redirect to thank you page
+            })
+            .catch(function (error) {
+              alert("❌ Failed to send responses: " + JSON.stringify(error));
+            });
+        });
+    </script>
+  </body>
+</html>
